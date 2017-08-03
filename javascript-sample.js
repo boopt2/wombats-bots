@@ -14,7 +14,7 @@
                 { action: 'shoot', metadata: {} } :
                 { action: 'smoke', metadata: { direction: smokeDirection } };*/
 
-    const command = { action: 'smoke', metadata: { direction: smokeDirection } }
+    const command = { action: 'smoke', metadata: { direction: smokeDirection } };
 
     return {
         command,
