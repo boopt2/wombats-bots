@@ -245,12 +245,14 @@
             }
         }
     }
-    else {
-
-        return {
-            'command': { action: 'smoke', metadata: {} },
-            'state': {}
-        };
+    return {
+        'command': { 
+                action: 'turn', 
+                metadata: {
+                        direction: 'left'
+                }
+            },
+                'state': {}
     }
 });
 
