@@ -110,21 +110,103 @@
         }
     }
     else if ("n" == state.arena[3][3].contents.orientation)  {
-        return {
-            'command': {
-                'action': 'move',
-                'metadata': {}
-            },
-            'state': {}
+        if (nClear){
+            return {
+                'command': {
+                    'action': 'move',
+                    'metadata': {}
+                },
+                'state': {}
+            }
+        }
+        else if (sClear){
+            return {
+                'command': { 
+                action: 'turn', 
+                metadata: {
+                    direction: 'about-face'
+                }
+                },
+                'state': {}
+            }
+        }
+        else if (wClear) {
+            return {
+                'command': { 
+                action: 'turn', 
+                metadata: {
+                    direction: 'left'
+                }
+                },
+                'state': {}
+            }
+        }
+        else if (eClear) {
+            return {
+                'command': { 
+                action: 'turn', 
+                metadata: {
+                    direction: 'right'
+                }
+                },
+                'state': {}
+            }
+        }
+        else {
+            return {
+                'command': { action: 'shoot', metadata: {} },
+                'state': {}
+            }
         }
     }
     else if ("w" == state.arena[3][3].contents.orientation)  {
-        return {
-            'command': {
-                'action': 'move',
-                'metadata': {}
-            },
-            'state': {}
+ if (wClear){
+            return {
+                'command': {
+                    'action': 'move',
+                    'metadata': {}
+                },
+                'state': {}
+            }
+        }
+        else if (eClear){
+            return {
+                'command': { 
+                action: 'turn', 
+                metadata: {
+                    direction: 'about-face'
+                }
+                },
+                'state': {}
+            }
+        }
+        else if (sClear) {
+            return {
+                'command': { 
+                action: 'turn', 
+                metadata: {
+                    direction: 'left'
+                }
+                },
+                'state': {}
+            }
+        }
+        else if (nClear) {
+            return {
+                'command': { 
+                action: 'turn', 
+                metadata: {
+                    direction: 'right'
+                }
+                },
+                'state': {}
+            }
+        }
+        else {
+            return {
+                'command': { action: 'shoot', metadata: {} },
+                'state': {}
+            }
         }
     }
     else {
