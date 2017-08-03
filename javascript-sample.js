@@ -6,13 +6,15 @@
     const smokeDirection = smokeDirections[Math.floor(Math.random() * 5)];
 
     const index = Math.floor(Math.random() * 17);
-    const command = index < 10 ?
+   /* const command = index < 10 ?
         { action: 'move', metadata: {} } :
         index < 12 ?
             { action: 'turn', metadata: { direction: turnDirection } } :
             index < 16 ?
                 { action: 'shoot', metadata: {} } :
-                { action: 'smoke', metadata: { direction: smokeDirection } };
+                { action: 'smoke', metadata: { direction: smokeDirection } };*/
+
+    const command = { action: 'smoke', metadata: { direction: smokeDirection } }
 
     return {
         command,
@@ -21,3 +23,5 @@
         }
     };
 });
+
+
