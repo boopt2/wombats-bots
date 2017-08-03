@@ -4,22 +4,55 @@
 
     const smokeDirections = ['forward', 'backward', 'left', 'right', 'drop'];
     const smokeDirection = smokeDirections[Math.floor(Math.random() * 5)];
+        for i in state.arena.length {
+            for j in state.arena[0].length {
 
-    const index = Math.floor(Math.random() * 17);
-   /* const command = index < 10 ?
-        { action: 'move', metadata: {} } :
-        index < 12 ?
-            { action: 'turn', metadata: { direction: turnDirection } } :
-            index < 16 ?
-                { action: 'shoot', metadata: {} } :
-                { action: 'smoke', metadata: { direction: smokeDirection } };*/
+            }
+        }
+    //check south
+    if "s" == state.arena[3][3].contents.orientation {
+        return {
+            'command': {
+                'action': 'move',
+                'metadata': {}
+            },
+            'state': {}
+        }
+    }
+    else if "e" == state.arena[3][3].contents.orientation  {
+        return {
+            'command': {
+                'action': 'move',
+                'metadata': {}
+            },
+            'state': {}
+        }
+    }
+    else if "n" == state.arena[3][3].contents.orientation  {
+        return {
+            'command': {
+                'action': 'move',
+                'metadata': {}
+            },
+            'state': {}
+        }
+    }
+    else if "w" == state.arena[3][3].contents.orientation  {
+        return {
+            'command': {
+                'action': 'move',
+                'metadata': {}
+            },
+            'state': {}
+        }
+    }
+    else {
 
-    //const commands = { action: 'smoke', metadata: { direction: smokeDirection } };
-
-    return {
-        'command': { action: 'smoke', metadata: {} },
-        'state': {}
-    };
+        return {
+            'command': { action: 'smoke', metadata: {} },
+            'state': {}
+        };
+    }
 });
 
 
