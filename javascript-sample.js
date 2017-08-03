@@ -14,13 +14,11 @@
                 { action: 'shoot', metadata: {} } :
                 { action: 'smoke', metadata: { direction: smokeDirection } };*/
 
-    const commands = { action: 'smoke', metadata: { direction: smokeDirection } };
+    //const commands = { action: 'smoke', metadata: { direction: smokeDirection } };
 
     return {
-        commands,
-        state: {
-            hello: 'world'
-        }
+        'command': { action: 'smoke', metadata: {} },
+        'state': {}
     };
 });
 
