@@ -17,12 +17,15 @@
             }
         } 
         if (sClear){
-            return {
-                'command': {
-                    'action': 'move',
-                    'metadata': {}
-                },
-                'state': {}
+            const rand = Math.floor(Math.random() * 20);
+            if (rand > 10) {
+                return {
+                    'command': {
+                        'action': 'move',
+                        'metadata': {}
+                    },
+                    'state': {}
+                    }
             }
         }
         else if (nClear){
@@ -73,12 +76,15 @@
             }
         } 
         if (eClear){
-            return {
-                'command': {
-                    'action': 'move',
-                    'metadata': {}
-                },
-                'state': {}
+            const rand = Math.floor(Math.random() * 20);
+            if (rand > 10) {
+                return {
+                    'command': {
+                        'action': 'move',
+                        'metadata': {}
+                    },
+                    'state': {}
+                    }
             }
         }
         else if (wClear){
@@ -129,12 +135,15 @@
             }
         } 
         if (nClear){
-            return {
-                'command': {
-                    'action': 'move',
-                    'metadata': {}
-                },
-                'state': {}
+            const rand = Math.floor(Math.random() * 20);
+            if (rand > 10) {
+                return {
+                    'command': {
+                        'action': 'move',
+                        'metadata': {}
+                    },
+                    'state': {}
+                    }
             }
         }
         else if (sClear){
@@ -185,12 +194,15 @@
             }
         } 
         if (wClear){
-            return {
-                'command': {
-                    'action': 'move',
-                    'metadata': {}
-                },
-                'state': {}
+            const rand = Math.floor(Math.random() * 20);
+            if (rand > 10) {
+                return {
+                    'command': {
+                        'action': 'move',
+                        'metadata': {}
+                    },
+                    'state': {}
+                    }
             }
         }
         else if (eClear){
