@@ -18,7 +18,7 @@
         } 
         if (sClear){
             const rand = Math.floor(Math.random() * 20);
-            if (rand > 10) {
+            if (rand > 4) {
                 return {
                     'command': {
                         'action': 'move',
@@ -77,7 +77,7 @@
         } 
         if (eClear){
             const rand = Math.floor(Math.random() * 20);
-            if (rand > 10) {
+            if (rand > 4) {
                 return {
                     'command': {
                         'action': 'move',
@@ -136,7 +136,7 @@
         } 
         if (nClear){
             const rand = Math.floor(Math.random() * 20);
-            if (rand > 10) {
+            if (rand > 4) {
                 return {
                     'command': {
                         'action': 'move',
@@ -195,7 +195,7 @@
         } 
         if (wClear){
             const rand = Math.floor(Math.random() * 20);
-            if (rand > 10) {
+            if (rand > 4) {
                 return {
                     'command': {
                         'action': 'move',
