@@ -5,7 +5,7 @@
     const smokeDirections = ['forward', 'backward', 'left', 'right', 'drop'];
     const smokeDirection = smokeDirections[Math.floor(Math.random() * 5)];
     //check south
-    if "s" == state.arena[3][3].contents.orientation {
+    if ("s" == state.arena[3][3].contents.orientation) {
         return {
             'command': {
                 'action': 'move',
@@ -14,7 +14,7 @@
             'state': {}
         }
     }
-    else if "e" == state.arena[3][3].contents.orientation  {
+    else if ("e" == state.arena[3][3].contents.orientation)  {
         return {
             'command': {
                 'action': 'move',
@@ -23,7 +23,7 @@
             'state': {}
         }
     }
-    else if "n" == state.arena[3][3].contents.orientation  {
+    else if ("n" == state.arena[3][3].contents.orientation)  {
         return {
             'command': {
                 'action': 'move',
@@ -32,7 +32,7 @@
             'state': {}
         }
     }
-    else if "w" == state.arena[3][3].contents.orientation  {
+    else if ("w" == state.arena[3][3].contents.orientation)  {
         return {
             'command': {
                 'action': 'move',
